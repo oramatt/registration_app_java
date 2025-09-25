@@ -251,7 +251,7 @@ public class MongoDBApp {
                 return;
             }
 
-            // Fallback to current DB
+            // fallback to current DB
             System.out.println("[No roles found in admin. Trying current DB...]");
             Document fallbackResult = currentDb.runCommand(cmd);
             printRoles.accept(fallbackResult);
@@ -277,7 +277,7 @@ public class MongoDBApp {
             System.out.print("Enter your choice: ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine(); // get the section
 
             switch (choice) {
                 case 1 -> addRegistrantPrompt(scanner, database);
