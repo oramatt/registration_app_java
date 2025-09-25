@@ -30,7 +30,7 @@ This project demonstrates:
 ## Requirements
 
 - Java 17+  
-- MongoDB Java Driver 5.x (dependencies shown in `lib/`)  
+- MongoDB Java Driver 5.x (dependencies should be in `lib/`)  
   - `mongodb-driver-sync`  
   - `mongodb-driver-core`  
   - `bson`  
